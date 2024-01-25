@@ -55,7 +55,7 @@
     margin-left: 300px;
 }
 body{
-    background-image: url("D:\reactbasics\fsproject\feedback\src\Components\Asserts\Images\img2.jpg");
+    /* background-image: url("D:\reactbasics\fsproject\feedback\src\Components\Asserts\Images\img2.jpg"); */
     background-attachment: fixed;
     padding-left: 10px;
     padding-right: 20px;
