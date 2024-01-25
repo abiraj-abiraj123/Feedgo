@@ -1,0 +1,54 @@
+.head{
+    padding-left: 200px;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+span{
+    padding-left: 250px;
+}
+.text1{
+    font-size:x-large;
+    font-weight: 500;
+    padding-right: 15px;
+    width: 200px;
+    padding-left: 25px;
+}
+.input{
+    width: 400px;
+    padding-left: 55px;
+    padding-top: 15px;
+    padding-right: 20px;
+}
+.btn11{
+    display: flex;
+    flex-direction: column;
+    width:150px;
+    height: 30px;
+    margin-left: 190px;
+    margin-bottom: 35px;
+    border-radius: 30px;
+}
+.a1{
+    padding-left: 200px;
+    margin-bottom: 25px;
+}
+p{
+    font-weight: 600;
+    margin-left: 185px;
+}
+p a:hover{
+    background-color: rgb(236, 130, 44);
+    border-radius: 25px;
+}
+img{
+    height: 787px;
+    width:500px
+}
+.t1{
+    padding-left: 178px;
+    padding-top: 60px;
+    font-weight: 700;
+}
+body{
+    background-image: url("D:\reactbasics\fsproject\feedback\src\Components\Asserts\Images\img2.jpg");
+}
