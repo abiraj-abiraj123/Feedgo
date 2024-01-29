@@ -2,12 +2,12 @@ import { Link, useNavigate } from "react-router-dom";
 import "./AdminFeedback.css";
 import "./Textarea";
 import "./Button";
-import { useState } from "react";
+import { useState,useContext } from "react";
 import { Button } from "react-bootstrap";
 import Textarea from "./Textarea";
+import {data} from './questions';
 const AdminFeedback = () => {
   const [question,questionchange]=useState("");
-
   const navigate=useNavigate();
   const handlesubmit= (e) => {  
 
@@ -57,7 +57,8 @@ const AdminFeedback = () => {
                       <button
                         className="buttons1 btn btn-success"
                         type="Submit"
-                      >
+                        onClick={()=>{data.push({"question":question});console.log("saved");navigate('/Afeedback')}}
+                        >
                         Save
                       </button>
                     </div>
