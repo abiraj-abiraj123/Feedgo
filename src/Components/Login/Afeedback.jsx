@@ -1,11 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import {data} from './questions'
 import "bootstrap/dist/css/bootstrap.min.css";
-
 const Afeedback = () => {
-
-    
-        const [question, questionchange] = useState(null);
+        const [question, questionchange] = useState(data);
         const navigate = useNavigate();
     
         const LoadDetail = (id) => {
@@ -37,14 +35,14 @@ const Afeedback = () => {
             })
         }, [])
         return (
-            <div className="container">
+            <div className="container" onLoad={()=>questionchange(data)}>
                 <div className="card">
                     <div className="card-title">
                         <h2>Feedback Editing</h2>
                     </div>
                     <div className="card-body">
                         <div className="divbtn">
-                            <Link to="/AdminFeedback" className=" button1 btn btn-success">Add New (+)</Link>
+                                <Link to="/AdminFeedback" className=" button1 btn btn-success">Add New (+)</Link>
                         </div>
                         <table className="table table-bordered">
                             <thead className="bg-dark text-white">
@@ -67,7 +65,7 @@ const Afeedback = () => {
                                 }
     
                             </tbody>
-    
+                            {console.log(question)}
                         </table>
                     </div>
                 </div>
