@@ -1,6 +1,6 @@
 let express=require('express');
 let app=express();
-let Model=require('./Mongodb');
+let Model=require('./Mongodb.js');
 app.post('/question',(req,res)=>{
     let data=req.body;
     let object=new Model();
